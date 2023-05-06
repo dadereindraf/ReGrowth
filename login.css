@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+.login-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #FFFBE9;
+}
+
+.login-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 850px;
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.login-body .login-container .login-left {
+    width: 400px;
+}
+
+.login-body .login-container .login-left .login-forms {
+    width: 250px;
+    margin: 60px auto;
+}
+
+.login-body .login-container .login-left .login-forms .login-title {
+    margin: 20px;
+    text-align: center;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+
+.login-body .login-container .login-left .login-hr {
+    border-top: 2px solid green;
+    margin-bottom: 25px;
+}
+
+.login-body .login-container .login-left .login-forms .forgot {
+    text-align: center;
+    margin: 10px;
+}
+
+.login-body .login-container .login-left .login-forms .forgot a{
+	text-decoration: none;
+	color: darkgreen;
+	font-weight: bold;
+}
+
+.login-body .login-container .login-right img {
+    width: 450px;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.login-body .login-container .login-left .login-forms label {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 5px;
+}
+
+.login-body .login-container .login-left .login-forms input {
+    width: 100%;
+    margin: 2px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid gray;
+}
+
+.login-body .login-container .login-left .login-forms button {
+    border: none;
+    outline: none;
+    padding: 8px;
+    width: 252px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    background: #DAE2B6;
+}
+
+.login-body .login-container .login-left .login-forms button:hover {
+    background: #CCD6A6;
+}
+
+.login-body .login-container .login-right {
+  position: relative;
+}
+
+.login-body .login-container .login-right::before {
+  content: "ReGrowth";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.login-body .login-container .login-left .signup {
+    text-align: center;
+    margin-top: -30px;
+}
+
+.login-body .login-container .login-left .signup a{
+    color: green;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+@media (max-width: 880px) {
+    .login-body.login-container {
+        width: 100%;
+        max-width: 750px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .login-body .login-container .login-left .login-forms {
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    .login-body .login-container .login-left {
+        width: 400px;
+        padding: 20px;
+    }
+
+    .login-body .login-container .login-left .login-forms button {
+        width: 100%;
+    }
+
+    .login-body .login-container .login-right img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .login-body .login-container {
+      max-width: 350px;
+      margin: 0 auto;
+      border-radius: 0;
+      box-shadow: none;
+    }
+    
+    .login-body .login-container .login-right {
+      display: none;
+    }
+    
+    .login-body .login-container .login-left {
+      width: 100%;
+      padding: 20px;
+    }
+    
+    .login-body .login-container .login-forms {
+      width: 100%;
+      margin: 20px auto;
+    }
+    
+    .login-body .login-container .login-left .login-forms input, .login-body .login-container .login-left .login-forms button {
+      width: 100%;
+    }
+  }
+  
